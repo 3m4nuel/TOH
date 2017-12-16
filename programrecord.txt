@@ -1,0 +1,627 @@
+Script started on Fri 15 Dec 2017 08:16:50 PM PST
+]0;casti107@empress:~/CS571/final/TOH[casti107@empress TOH]$ ls
+[00m[00mAction.cpp[00m  [00mChecks.cpp[00m  [00mMain.cpp[00m  [00mNode.h[00m     [00mPrint.h[00m             [00;32mrecordhw[00m   [00mState.h[00m  [00;32mtoh[00m
+[00mAction.h[00m    [00mChecks.h[00m    [00mNode.cpp[00m  [00mPrint.cpp[00m  [00m,programrecord.txt[00m  [00mState.cpp[00m  [00mTest.h[00m
+[m]0;casti107@empress:~/CS571/final/TOH[casti107@empress TOH]$ g++ *.cpp -o toh
+]0;casti107@empress:~/CS571/final/TOH[casti107@empress TOH]$ ./toh TEST
+TEST 1 RUNNING....
+
+Fontier nodes are: [LargeMediumSmall||] h=3 g=0 f=3 
+Expand: [LargeMediumSmall||] h=3 g=0 f=3 
+Generated: 
+	State and Value is [LargeMedium|Small|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [LargeMedium||Small] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeSmall|Medium|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [LargeSmall||Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [MediumSmall|Large|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [MediumSmall||Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [MediumSmall||Large] h=2 g=0 f=2 [LargeMedium|Small|] h=3 g=0 f=3 [LargeSmall|Medium|] h=3 g=0 f=3 [MediumSmall|Large|] h=3 g=0 f=3 [LargeSmall||Medium] h=4 g=0 f=4 [LargeMedium||Small] h=4 g=0 f=4 
+Expand: [MediumSmall||Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Medium||LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Medium|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Small||LargeMedium] h=1 g=0 f=1 [Medium|Small|Large] h=2 g=0 f=2 [Small|Medium|Large] h=2 g=0 f=2 [LargeMedium|Small|] h=3 g=0 f=3 [LargeSmall|Medium|] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [MediumSmall|Large|] h=3 g=0 f=3 [LargeSmall||Medium] h=4 g=0 f=4 [LargeMedium||Small] h=4 g=0 f=4 
+Expand: [Small||LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Large|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [|Small|LargeMedium] h=1 g=0 f=1 [Medium|Small|Large] h=2 g=0 f=2 [Small|Medium|Large] h=2 g=0 f=2 [LargeMedium|Small|] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [LargeSmall|Medium|] h=3 g=0 f=3 [MediumSmall|Large|] h=3 g=0 f=3 [Small|Large|Medium] h=4 g=0 f=4 [LargeSmall||Medium] h=4 g=0 f=4 [LargeMedium||Small] h=4 g=0 f=4 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 2 RUNNING....
+
+Fontier nodes are: [|LargeMediumSmall|] h=3 g=0 f=3 
+Expand: [|LargeMediumSmall|] h=3 g=0 f=3 
+Generated: 
+	State and Value is [|LargeMedium|Small] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|LargeMedium|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|LargeSmall|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Medium|LargeSmall|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|MediumSmall|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Large|MediumSmall|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [|MediumSmall|Large] h=2 g=0 f=2 [Large|MediumSmall|] h=3 g=0 f=3 [Small|LargeMedium|] h=3 g=0 f=3 [Medium|LargeSmall|] h=3 g=0 f=3 [|LargeMedium|Small] h=4 g=0 f=4 [|LargeSmall|Medium] h=4 g=0 f=4 
+Expand: [|MediumSmall|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [|Medium|LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Medium|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [Small|Medium|Large] h=2 g=0 f=2 [Medium|Small|Large] h=2 g=0 f=2 [Large|MediumSmall|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [Medium|LargeSmall|] h=3 g=0 f=3 [Small|LargeMedium|] h=3 g=0 f=3 [|LargeMedium|Small] h=4 g=0 f=4 [|LargeSmall|Medium] h=4 g=0 f=4 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Large|Small|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [Small|Medium|Large] h=2 g=0 f=2 [Medium|Small|Large] h=2 g=0 f=2 [Large|MediumSmall|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [Medium|LargeSmall|] h=3 g=0 f=3 [Small|LargeMedium|] h=3 g=0 f=3 [|LargeSmall|Medium] h=4 g=0 f=4 [|LargeMedium|Small] h=4 g=0 f=4 [Large|Small|Medium] h=4 g=0 f=4 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 3 RUNNING....
+
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 4 RUNNING....
+
+Fontier nodes are: [Small||LargeMedium] h=1 g=0 f=1 
+Expand: [Small||LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Medium|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Large|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [|Small|LargeMedium] h=1 g=0 f=1 [Small|Medium|Large] h=2 g=0 f=2 [Small|Large|Medium] h=4 g=0 f=4 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 5 RUNNING....
+
+Fontier nodes are: [Small|LargeMedium|] h=3 g=0 f=3 
+Expand: [Small|LargeMedium|] h=3 g=0 f=3 
+Generated: 
+	State and Value is [|LargeMediumSmall|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|LargeMedium|Small] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Large|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Medium|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Small|Medium|Large] h=2 g=0 f=2 [|LargeMediumSmall|] h=3 g=0 f=3 [|LargeMedium|Small] h=4 g=0 f=4 [Small|Large|Medium] h=4 g=0 f=4 
+Expand: [Small|Medium|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [|MediumSmall|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Medium|LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Small||LargeMedium] h=1 g=0 f=1 [|MediumSmall|Large] h=2 g=0 f=2 [|LargeMediumSmall|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [|LargeMedium|Small] h=4 g=0 f=4 [Small|Large|Medium] h=4 g=0 f=4 
+Expand: [Small||LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [|Small|LargeMedium] h=1 g=0 f=1 [|MediumSmall|Large] h=2 g=0 f=2 [|LargeMediumSmall|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [|LargeMedium|Small] h=4 g=0 f=4 [Small|Large|Medium] h=4 g=0 f=4 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 6 RUNNING....
+
+Fontier nodes are: [Small|Medium|Large] h=2 g=0 f=2 
+Expand: [Small|Medium|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [|MediumSmall|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Medium|LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Small||LargeMedium] h=1 g=0 f=1 [|MediumSmall|Large] h=2 g=0 f=2 [|Medium|LargeSmall] h=3 g=0 f=3 
+Expand: [Small||LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Large|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [|Small|LargeMedium] h=1 g=0 f=1 [|MediumSmall|Large] h=2 g=0 f=2 [|Medium|LargeSmall] h=3 g=0 f=3 [Small|Large|Medium] h=4 g=0 f=4 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 7 RUNNING....
+
+Fontier nodes are: [Medium||LargeSmall] h=3 g=0 f=3 
+Expand: [Medium||LargeSmall] h=3 g=0 f=3 
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [MediumSmall||Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [|Medium|LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Medium|Large|Small] h=6 g=0 f=6 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Medium|Small|Large] h=2 g=0 f=2 [MediumSmall||Large] h=2 g=0 f=2 [|Medium|LargeSmall] h=3 g=0 f=3 [Medium|Large|Small] h=6 g=0 f=6 
+Expand: [Medium|Small|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [|Medium|LargeSmall] h=3 g=0 f=3 [Medium|Large|Small] h=6 g=0 f=6 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Large|Small|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [|Medium|LargeSmall] h=3 g=0 f=3 [Large|Small|Medium] h=4 g=0 f=4 [Medium|Large|Small] h=6 g=0 f=6 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 8 RUNNING....
+
+Fontier nodes are: [Medium|LargeSmall|] h=3 g=0 f=3 
+Expand: [Medium|LargeSmall|] h=3 g=0 f=3 
+Generated: 
+	State and Value is [Medium|Large|Small] h=6 g=0 f=6 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [MediumSmall|Large|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|LargeSmall|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Medium|Small|Large] h=2 g=0 f=2 [MediumSmall|Large|] h=3 g=0 f=3 [|LargeSmall|Medium] h=4 g=0 f=4 [Medium|Large|Small] h=6 g=0 f=6 
+Expand: [Medium|Small|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [Medium||LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [MediumSmall||Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [MediumSmall|Large|] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [|LargeSmall|Medium] h=4 g=0 f=4 [Medium|Large|Small] h=6 g=0 f=6 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Large|Small|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [MediumSmall|Large|] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [|LargeSmall|Medium] h=4 g=0 f=4 [Large|Small|Medium] h=4 g=0 f=4 [Medium|Large|Small] h=6 g=0 f=6 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 9 RUNNING....
+
+Fontier nodes are: [Medium|Small|Large] h=2 g=0 f=2 
+Expand: [Medium|Small|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [Medium||LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [MediumSmall||Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [Medium||LargeSmall] h=3 g=0 f=3 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Large|Small|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [Medium||LargeSmall] h=3 g=0 f=3 [Large|Small|Medium] h=4 g=0 f=4 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 10 RUNNING....
+
+Fontier nodes are: [Large||MediumSmall] h=5 g=0 f=5 
+Expand: [Large||MediumSmall] h=5 g=0 f=5 
+Generated: 
+	State and Value is [Large|Small|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeSmall||Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Large|Medium|Small] h=6 g=0 f=6 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeMedium||Small] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [|Large|MediumSmall] h=5 g=0 f=5 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [Large|Small|Medium] h=4 g=0 f=4 [LargeSmall||Medium] h=4 g=0 f=4 [LargeMedium||Small] h=4 g=0 f=4 [|Large|MediumSmall] h=5 g=0 f=5 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [Large|Small|Medium] h=4 g=0 f=4 
+Generated: 
+	State and Value is [LargeMedium|Small|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [LargeMedium|Small|] h=3 g=0 f=3 [LargeSmall||Medium] h=4 g=0 f=4 [LargeMedium||Small] h=4 g=0 f=4 [|Large|MediumSmall] h=5 g=0 f=5 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [LargeMedium|Small|] h=3 g=0 f=3 
+Generated: 
+	State and Value is [LargeMediumSmall||] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Medium|Small|Large] h=2 g=0 f=2 [LargeMediumSmall||] h=3 g=0 f=3 [LargeSmall||Medium] h=4 g=0 f=4 [LargeMedium||Small] h=4 g=0 f=4 [|Large|MediumSmall] h=5 g=0 f=5 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [Medium|Small|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [Medium||LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [MediumSmall||Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [LargeMediumSmall||] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 [LargeSmall||Medium] h=4 g=0 f=4 [|Large|MediumSmall] h=5 g=0 f=5 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [LargeMediumSmall||] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [LargeSmall||Medium] h=4 g=0 f=4 [LargeMedium||Small] h=4 g=0 f=4 [|Large|MediumSmall] h=5 g=0 f=5 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 11 RUNNING....
+
+Fontier nodes are: [Large|MediumSmall|] h=3 g=0 f=3 
+Expand: [Large|MediumSmall|] h=3 g=0 f=3 
+Generated: 
+	State and Value is [Large|Medium|Small] h=6 g=0 f=6 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeSmall|Medium|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Large|Small|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeMedium|Small|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|MediumSmall|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [|MediumSmall|Large] h=2 g=0 f=2 [LargeSmall|Medium|] h=3 g=0 f=3 [LargeMedium|Small|] h=3 g=0 f=3 [Large|Small|Medium] h=4 g=0 f=4 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [|MediumSmall|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [|Medium|LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Medium|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [Small|Medium|Large] h=2 g=0 f=2 [Medium|Small|Large] h=2 g=0 f=2 [LargeSmall|Medium|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [LargeMedium|Small|] h=3 g=0 f=3 [Large|Small|Medium] h=4 g=0 f=4 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [Small|Medium|Large] h=2 g=0 f=2 [Medium|Small|Large] h=2 g=0 f=2 [LargeSmall|Medium|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [LargeMedium|Small|] h=3 g=0 f=3 [Large|Small|Medium] h=4 g=0 f=4 [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 12 RUNNING....
+
+Fontier nodes are: [Large|Small|Medium] h=4 g=0 f=4 
+Expand: [Large|Small|Medium] h=4 g=0 f=4 
+Generated: 
+	State and Value is [Large||MediumSmall] h=5 g=0 f=5 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeSmall||Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [LargeMedium|Small|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [LargeMedium|Small|] h=3 g=0 f=3 [LargeSmall||Medium] h=4 g=0 f=4 [Large||MediumSmall] h=5 g=0 f=5 
+Expand: [LargeMedium|Small|] h=3 g=0 f=3 
+Generated: 
+	State and Value is [LargeMedium||Small] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeMediumSmall||] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Medium|Small|Large] h=2 g=0 f=2 [LargeMediumSmall||] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 [LargeSmall||Medium] h=4 g=0 f=4 [Large||MediumSmall] h=5 g=0 f=5 
+Expand: [Medium|Small|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [Medium||LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [MediumSmall||Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [LargeMediumSmall||] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 [LargeSmall||Medium] h=4 g=0 f=4 [Large||MediumSmall] h=5 g=0 f=5 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [MediumSmall||Large] h=2 g=0 f=2 [LargeMediumSmall||] h=3 g=0 f=3 [Medium||LargeSmall] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 [LargeSmall||Medium] h=4 g=0 f=4 [Large||MediumSmall] h=5 g=0 f=5 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+TEST 13 RUNNING....
+
+Fontier nodes are: [Large|Medium|Small] h=6 g=0 f=6 
+Expand: [Large|Medium|Small] h=6 g=0 f=6 
+Generated: 
+	State and Value is [Large|MediumSmall|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeSmall|Medium|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeMedium||Small] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [Large|MediumSmall|] h=3 g=0 f=3 [LargeSmall|Medium|] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 
+Expand: [Large|MediumSmall|] h=3 g=0 f=3 
+Generated: 
+	State and Value is [Large|Small|Medium] h=4 g=0 f=4 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [LargeMedium|Small|] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|MediumSmall|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	Yes
+Fontier nodes are: [|MediumSmall|Large] h=2 g=0 f=2 [LargeSmall|Medium|] h=3 g=0 f=3 [LargeMedium|Small|] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 [Large|Small|Medium] h=4 g=0 f=4 
+Expand: [|MediumSmall|Large] h=2 g=0 f=2 
+Generated: 
+	State and Value is [|Medium|LargeSmall] h=3 g=0 f=3 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small|Medium|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Generated: 
+	State and Value is [|Small|LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Medium|Small|Large] h=2 g=0 f=2 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [|Small|LargeMedium] h=1 g=0 f=1 [Small|Medium|Large] h=2 g=0 f=2 [Medium|Small|Large] h=2 g=0 f=2 [LargeSmall|Medium|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [LargeMedium|Small|] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 [Large|Small|Medium] h=4 g=0 f=4 
+Expand: [|Small|LargeMedium] h=1 g=0 f=1 
+Generated: 
+	State and Value is [||LargeMediumSmall] h=0 g=0 f=0 
+	Regenerated is 	No
+	Updated f?	Yes
+Generated: 
+	State and Value is [Small||LargeMedium] h=1 g=0 f=1 
+	Regenerated is 	No
+	Updated f?	No
+Fontier nodes are: [||LargeMediumSmall] h=0 g=0 f=0 [Small||LargeMedium] h=1 g=0 f=1 [Small|Medium|Large] h=2 g=0 f=2 [Medium|Small|Large] h=2 g=0 f=2 [LargeSmall|Medium|] h=3 g=0 f=3 [|Medium|LargeSmall] h=3 g=0 f=3 [LargeMedium|Small|] h=3 g=0 f=3 [LargeMedium||Small] h=4 g=0 f=4 [Large|Small|Medium] h=4 g=0 f=4 
+Expand: [||LargeMediumSmall] h=0 g=0 f=0 
+Goal Found.
+
+]0;casti107@empress:~/CS571/final/TOH[casti107@empress TOH]$ ls
+[00m[00mAction.cpp[00m  [00mChecks.cpp[00m  [00mMain.cpp[00m  [00mNode.h[00m     [00mPrint.h[00m             [00;32mrecordhw[00m   [00mState.h[00m  [00;32mtoh[00m
+[00mAction.h[00m    [00mChecks.h[00m    [00mNode.cpp[00m  [00mPrint.cpp[00m  [00m,programrecord.txt[00m  [00mState.cpp[00m  [00mTest.h[00m
+[m]0;casti107@empress:~/CS571/final/TOH[casti107@empress TOH]$ exit
+exit
+
+Script done on Fri 15 Dec 2017 08:17:36 PM PST
