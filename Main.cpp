@@ -9,8 +9,6 @@
  * disk can be moved at a time.
  *
  */
-#include "stdafx.h"
-
 #include <functional>
 #include <iostream>
 #include <list>

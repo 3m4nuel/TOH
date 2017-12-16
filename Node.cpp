@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 #include "Node.h"
 #include "State.h"
 

@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 #include "Print.h"
 
 #include <iostream>

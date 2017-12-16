@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 #include "Checks.h"
 
 bool isStateExistInVector(vector<State*> states, State *stateToFind)
